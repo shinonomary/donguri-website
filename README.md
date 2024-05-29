@@ -45,10 +45,16 @@ $ cd donguri-web
 $ cd donguri-web
 $ hugo mod init github.com/shinonomary/donguri-website
 $ hugo mod get github.com/willfaught/paige@latest
+$ cat >>hugo.toml <<EOF
+[[module.imports]]
+path = "github.com/willfaught/paige"
+EOF
 
 ```
 ※ちょっと前のhugoのバージョンだと、gitのgit submoduleで導入するのが一般的だったけど、最近のバージョンだとHugo modulesという機能を使うのが一般的になったらしいので、
 そちら側で書く。
+
+```
 
 # 編集作業
 
